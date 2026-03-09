@@ -54,18 +54,16 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <Image
-                src="/gym-people.jpg"
+                src="/foto.png"
                 alt="Alunos treinando na Academia Saikoo"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={100}
+                priority
                 className="object-cover"
               />
-            </div>
-            {/* Decorative accent */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
-            <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-primary/20 rounded-2xl -z-10" />
           </div>
 
           {/* Content */}
